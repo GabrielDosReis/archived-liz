@@ -1,0 +1,9 @@
+define fibonacci(val:int):int = fibonacci(val-2,0,1) where
+  fibonacci(val:int, f_num:int, s_num:int):int =
+    if s_num < f_num then -1 
+    if val == -2 then f_num  
+    if val == -1 then s_num
+    else fibonacci(val-1,s_num,f_num+s_num) 
+
+-- evaluate.
+fibonacci 6

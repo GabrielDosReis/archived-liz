@@ -1,0 +1,7 @@
+-- Namespace evaluation test.
+
+define ns: namespace =
+  define x:int = 3
+  define y:int = 1
+
+print(ns.x + ns.y)
